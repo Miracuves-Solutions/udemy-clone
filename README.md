@@ -29,10 +29,10 @@ Demo credentials for all environments: **[miracuves.com/udemy-clone → Demo sec
 Most LMS scripts stop at "course pages." This platform ships with the features that actually run an edtech *business*:
 
 - **Adaptive Bitrate Video** — HLS adaptive streaming with DRM protection — learners on slow networks still get smooth playback
-- **Course Builder with Quizzes** — 
-- **Multi-Instructor Splits** — drag-and-drop course builder with auto-graded quizzes, assignments, and certificates — saves instructor hours
-- **AI-Powered Recommendations** — low-latency WebRTC classes with whiteboard, breakout rooms, and recordings — what BYJU's uses for live learning
-- **Built-In Live Classes** — per-learner course suggestions based on goals, history, and behaviour — increases LTV
+- **Course Builder with Quizzes** — drag-and-drop course builder with auto-graded quizzes, assignments, and certificates — saves instructor hours
+- **Multi-Instructor Splits** — revenue-share with multiple instructors per course — same model Udemy uses
+- **AI-Powered Recommendations** — per-learner course suggestions based on goals, history, and behaviour — increases LTV
+- **Built-In Live Classes** — low-latency WebRTC classes with whiteboard, breakout rooms, and recordings — what BYJU's uses for live learning
 
 ## 📦 Core Features
 
