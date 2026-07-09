@@ -1,326 +1,119 @@
-# Udemy Clone — White-Label Solution by Miracuves
+# Udemy Clone — White-Label EdTech & E-Learning Platform by Miracuves
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxedu.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/udemy-clone/)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/udemy-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/udemy-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXEdu** is a production-ready, white-label Udemy clone: a complete edtech platform with courses, live classes, quizzes, and instructor dashboard — delivered with **100% source code ownership** in **6 working days**.
+
+> 🎓 **See it running before you talk to anyone.** Live learner app, instructor dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/udemy-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxedu.mimeld.com](https://mxedu.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/udemy-clone/#demo) | Users, content, plans, analytics |
+| 📱 Learner App | [mas.mimeld.com](https://mas.mimeld.com) | Browse courses, enrol, watch, take quizzes |
+| 🌐 Web Portal | [mxedu.mimeld.com](https://mxedu.mimeld.com) | Full learner experience in browser |
+| 🎓 Instructor Dashboard | [Solution page → Demo](https://miracuves.com/udemy-clone#demo) | Courses, students, earnings, analytics |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/udemy-clone#demo) | Courses, instructors, payments, analytics |
 
-Demo credentials: [miracuves.com/udemy-clone -> Demo section](https://miracuves.com/udemy-clone/#demo)
-
-## What Makes This Udemy Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch platform |
-| Agencies | White-label |
+Demo credentials for all environments: **[miracuves.com/udemy-clone → Demo section](https://miracuves.com/udemy-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Udemy Clone Different
 
-1. User opens
-2. Selects
-3. Completes
-4. Payment
-5. Confirmation
+Most LMS scripts stop at "course pages." This platform ships with the features that actually run an edtech *business*:
 
----
+- **Adaptive Bitrate Video** — HLS adaptive streaming with DRM protection — learners on slow networks still get smooth playback
+- **Course Builder with Quizzes** — 
+- **Multi-Instructor Splits** — drag-and-drop course builder with auto-graded quizzes, assignments, and certificates — saves instructor hours
+- **AI-Powered Recommendations** — low-latency WebRTC classes with whiteboard, breakout rooms, and recordings — what BYJU's uses for live learning
+- **Built-In Live Classes** — per-learner course suggestions based on goals, history, and behaviour — increases LTV
 
-## Core Features
+## 📦 Core Features
 
-### User Dashboard
-- Create & manage
-- Templates library
-- Analytics
-- Account settings
-- Billing
+**Learner:** browse courses · enrol · watch lectures · take quizzes · earn certificates · track progress · discussion forums · multi-language
 
-### Creator Panel
-- Content management
-- User analytics
-- Payout setup
+**Instructor:** course builder · video upload · quizzes & assignments · student analytics · Q&A · payouts · coupons
 
-### Admin Panel
-- Tenant management
-- Subscription plans
-- Revenue reports
-- System health
+**Admin:** instructor approvals · course moderation · commission engine · coupon management · analytics reports
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Smart automation
-- **AI Builder Assistant** - Smart suggestions for creation
-- **AI Analytics** - User behavior insights
-- **AI Automation** - Workflow automation
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Student | Learn,review |
-| Instructor | Course,earn |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Learner App<br/>Flutter]
+    B[Web Portal<br/>Responsive]
+    W[Instructor Dashboard]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> HLS[HLS<br/>Video Pipeline]
+    HLS --> A
+    HLS --> B
+    G --> PAY[Stripe/Razorpay]
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps · Node.js backend · MongoDB · HLS adaptive streaming · Stripe/Razorpay · WebRTC for live classes · Stripe, Razorpay, PayPal, regional gateways, multi-currency
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| DB | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$2,899**, transparent on the [solution page](https://miracuves.com/udemy-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription
-- Premium
-- Monthly/Annual subscriptions
-- Freemium with upgrades
-- Pay-per-use
-- Enterprise plans
-- Add-on features
+Custom edtech platforms run $80k–$400k and 6–12 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for instructor recruitment and content marketing.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Udemy Clone — Full Solution Page](https://miracuves.com/udemy-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does an EdTech App Cost in 2026?](https://miracuves.com/udemy-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Udemy Clone Script in 2026](https://miracuves.com/udemy-clone/blog/) features, pricing & launch guide
+- 🧠 [Adaptive Video: Why EdTech Pipelines Should Look Like Netflix's](https://miracuves.com/udemy-clone/blog/) HLS, DRM, cost math
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/udemy-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$2,899** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/udemy-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Student
-- Instructor
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: udemy clone, udemy clone script, edtech, online learning, LMS, white label Udemy, course marketplace, Flutter edtech app, Node.js LMS*
 
 ---
-**Pricing:** from **$2,899** — transparent on the [solution page](https://miracuves.com/udemy-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$2,899 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- On-demand
-- Digital
-- Small business SaaS
-- Enterprise tools
-- Creative professionals
-- Education platforms
-- Communication tools
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**Cost?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Can I customize the branding?**
-Yes, full white-labeling included.
-
-**Do you provide post-launch support?**
-60 days free bug support included.
-
-**Can I add custom features?**
-Yes, we accommodate custom requests.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Uber Clone](https://github.com/Miracuves-Solutions/uber-clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/udemy-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your e-learning marketplace?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/udemy-clone](https://miracuves.com/udemy-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: udemy clone, udemy script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Udemy Clone
+{MX_NAME}         MXEdu
+{CATEGORY}        EdTech & E-Learning Platform
+{DEMO_WEB}        mxedu.mimeld.com
+{PRICE}           $2,899
+{SLUG}            udemy-clone
+{SOLUTION_URL}    https://miracuves.com/udemy-clone/
+{VERTICAL}        edu
+
+See /tmp/verticals/edu.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
